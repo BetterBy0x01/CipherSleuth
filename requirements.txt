@@ -1,2 +1,3 @@
 colored==2.2.3
+factordb_pycli==1.3.0
 gmpy2==2.1.2
