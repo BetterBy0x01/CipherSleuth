@@ -11,7 +11,7 @@ print(banner.yellow + """
 )
 
 choice = int(input(banner.blue + ">> " + banner.reset))
-
+os.system("clear")
 if (choice == 2):
     import factorization
 elif (choice == 1):
@@ -31,16 +31,39 @@ elif (choice == 1):
 [12] Attack(c, n, e)                             [Multi Prime Number]
 [13] Attack(c, e = 3)                            
 [14] Attack(c1, c2, n1, n2, e)                   [Common Factor]
-[15] Attack(c, n, e)                             [boneh durfee]
 [0] Exit
-    """+banner.reset)
-    option = int(input(">> "))
-    if (1 <= option <= 15):
+    """ + banner.reset)
+    option = int(input(banner.blue + ">> " + banner.reset))
+    if (1 <= option <= 14):
         os.system("clear")
     if (option == 1):
-        pass
+        import attacks.rsa
     elif (option == 2):
         import attacks.rsa2
+    elif (option == 3):
+        import attacks.rsa3
+    elif (option == 4):
+        import attacks.rsa4
+    elif (option == 5):
+        import attacks.rsa5
+    elif (option == 6):
+        import attacks.rsa_hasted
+    elif (option == 7):
+        import attacks.rsa_common_modulus
+    elif (option == 8):
+        import attacks.rsa_chinese_remainder_theorem
+    elif (option == 9):
+        import attacks.rsa_wiener
+    elif (option == 10):
+        import attacks.rsa_10
+    elif (option == 11):
+        import attacks.rsa_11
+    elif (option == 12):
+        import attacks.rsa_multi_prime
+    elif (option == 13):
+        import attacks.rsa_13
+    elif (option == 14):
+        import attacks.rsa_14
     else:
         exit()
 else:

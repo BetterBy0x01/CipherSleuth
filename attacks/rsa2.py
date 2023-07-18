@@ -1,19 +1,17 @@
 import sys
-
-# Add the parent directory to the sys.path list
-sys.path.append("..")
-
 import banner
 from utilis import Convert, modinv
 
+# Add the parent directory to the sys.path list
+sys.path.append("..")
 
 banner.banner()
 
 try:
     c = int(input(banner.blue + ">> c = " + banner.reset))
-    p = int(input(banner.blue + ">> p = " + banner.reset))
-    q = int(input(banner.blue + ">> q = " + banner.reset))
-    e = int(input(banner.blue + ">> e = " + banner.reset))
+    p = int(input(">> p = "))
+    q = int(input(">> q = "))
+    e = int(input(">> e = " + banner.reset))
 
     n = p*q
     phi = (p-1)*(q-1)
