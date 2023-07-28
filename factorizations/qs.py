@@ -10,3 +10,6 @@
 # 2. Solve kernels of a matrix.
     # To find the kernel of a matrix A is the same as to solve the system AX = 0
 
+################# WILL WATCH THE ABOVE LATER ############################
+# https://medium.com/nerd-for-tech/heres-how-quadratic-sieve-factorization-works-1c878bc94f81#:~:text=Towards%20Quadratic%20Sieve%20Factorization&text=Accordingly%2C%20to%20obtain%20the%20factors,computed%20efficiently%20with%20Euclidean%20algorithm.
+

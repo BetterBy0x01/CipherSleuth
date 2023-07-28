@@ -8,8 +8,8 @@ banner.banner()
 
 print(banner.blue + "[1] FactorDB Factorization\n" + banner.reset
     +banner.yellow + "[2] Fermat Factorization\n" + banner.reset
-    +banner.red + "[3] ECM Factorization\n" + banner.reset
-    +banner.violet + "[4] Quadratic Sieve Factorization\n" + banner.reset
+    # +banner.red + "[3] ECM Factorization\n" + banner.reset
+    # +banner.violet + "[4] Quadratic Sieve Factorization\n" + banner.reset
     +banner.green + "[5] Exit\n" + banner.reset
     )
 choice = int(input(banner.blue + ">> " + banner.reset))
@@ -20,7 +20,7 @@ if choice == 1:
     print(banner.red + "\n[+] Please Wait...\n" + banner.reset)
     print(banner.yellow + f"Primes: {factordb.factorize(n)}\n" + banner.reset)
 
-# Fermat
+# Fermat Ex. 21
 if choice == 2:
     n = int(input(banner.blue + ">> n = " + banner.reset))
     print(banner.red + "\n[+] Please Wait...\n" + banner.reset)

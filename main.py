@@ -6,12 +6,38 @@ banner.banner()
 print(banner.yellow + """
 [1] RSA Attacks
 [2] Factorize Number
+[3] URL encoding/decoding
+[4] AES Attacks
+[5] Ciphers (Vigenere, Rail Fence)
 """
     + banner.reset
 )
 
 choice = int(input(banner.blue + ">> " + banner.reset))
 os.system("clear")
+if (choice == 5):
+    import cipher
+if (choice == 4):
+    banner.banner()
+    print(banner.yellow + """
+[1]  Brute Force Attack
+[2]  Known Plaintext Attack
+[3]  Meet in the Middle Attack
+[4]  Exit
+    """ + banner.reset)
+    option = int(input(banner.blue + ">> " + banner.reset))
+    # if (1 <= option <= 14):
+    #     os.system("clear")
+    if (option == 1):
+        import AES_attacks.bruteForce
+    elif (option == 2):
+        import AES_attacks.known_plaintext
+    elif (option == 3):
+        import AES_attacks.meet_in_the_middle
+    elif (option == 4):
+        exit()
+if (choice == 3):
+    import url_encoding
 if (choice == 2):
     import factorization
 elif (choice == 1):
